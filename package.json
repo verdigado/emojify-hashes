@@ -1,0 +1,13 @@
+{
+  "name": "emojify-hashes",
+  "version": "0.1.0",
+  "description": "Crate a visualisation of hashes using unicode emoji",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cli": "node main.js"
+  },
+  "author": "HerHde",
+  "license": "MIT"
+}
