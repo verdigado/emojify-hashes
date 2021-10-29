@@ -17,4 +17,4 @@ class Emojifier {
   }
 }
 
-export default Emojifier
+module.exports = Emojifier

@@ -1,6 +1,6 @@
-import Emojifier from './Emojifier.js'
-import Sha256 from './Sha256.js'
-import readline from 'readline'
+const Emojifier = require('./Emojifier.js')
+const Sha256 = require('./Sha256.js')
+const readline = require('readline')
 
 console.log('Type something in to generate it\'s sha256 hash and an emoji representation of that.')
 

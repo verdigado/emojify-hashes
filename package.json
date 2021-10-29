@@ -1,13 +1,15 @@
 {
   "name": "emojify-hashes",
-  "version": "0.3.0",
   "description": "Crate a visualisation of hashes using unicode emoji",
-  "type": "module",
-  "main": "main.js",
+  "main": "Emojifier.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cli": "node main.js"
   },
   "author": "HerHde",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git.verdigado.com/verdigado/emojify-hashes.git"
+  }
 }
