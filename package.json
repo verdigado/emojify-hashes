@@ -1,6 +1,6 @@
 {
   "name": "emojify-hashes",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "Crate a visualisation of hashes using unicode emoji",
   "type": "module",
   "main": "main.js",
