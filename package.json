@@ -1,6 +1,7 @@
 {
   "name": "emojify-hashes",
   "description": "Crate a visualisation of hashes using unicode emoji",
+  "version": "0.3.0",
   "main": "Emojifier.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
