@@ -3,9 +3,14 @@ export const emojis = [
 ]
 
 export default function emojify (hexString) {
+  const hexRegEx = /^[0-9a-fA-F]+$/
   const numEmojis = 4
   const sliceSize = hexString.length / numEmojis
   const result = []
+
+  if (!hexRegEx.test(hexString)) {
+    throw RangeError(`Input "${hexRegEx}" is not hexadecimal.`);
+  }
 
   for (let i = 0; i < numEmojis; i++) {
     const startIndex = i * sliceSize
