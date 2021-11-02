@@ -33,3 +33,9 @@ const hash = 'f3d18279b58b78a7e41fc6ec93f00f4dde045463ec21a527714e65c30553a52d' 
 const emojis = emojify(hash) // Returns [ '🍸', '🥧', '🐏', '🐗' ]
 console.log(emojis.join('')) // Outputs 🍸🥧🐏🐗
 ```
+
+## About
+
+I consider the status of this package to be `release-candidate`. Contributions are welcome!
+
+Made by HerHde for [verdigado](https://verdigado.com/)
