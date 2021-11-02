@@ -17,14 +17,14 @@ toSha256ToEmoji>
 ## Installation
 
 ```shell
-npm i <path/to/this/project>
+npm i emojify-hashes
 ```
 
 ## Usage
 
-For demonstrational purposes I bashed out a CLI which converts the entered values to sha256 and then emojifies it. Run it via `npm run cli` or `node main.js`. Exit it with for example with `Ctrl` + `C`.
+For demonstrational purposes I bashed out a CLI which converts the entered values to sha256 and then emojifies it. Run it via `npm run cli` or `node cli.js`. Exit it with for example with `Ctrl` + `C`.
 
-To use the module in your own module, import and feed it!
+To use the module in your own **module** (your `package.json` should contain `{ "type": "module" }`), import and feed it!
 
 ```js
 import emojify from 'emojify-hashes'
