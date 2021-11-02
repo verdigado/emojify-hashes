@@ -1,9 +1,9 @@
 {
   "name": "emojify-hashes",
   "description": "Crate a visualisation of hashes using unicode emoji",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "type": "module",
-  "main": "Emojifier.js",
+  "main": "emojify.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cli": "node main.js"

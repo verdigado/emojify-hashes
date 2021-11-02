@@ -24,12 +24,12 @@ npm i <path/to/this/project>
 
 For demonstrational purposes I bashed out a CLI which converts the entered values to sha256 and then emojifies it. Run it via `npm run cli` or `node main.js`. Exit it with for example with `Ctrl` + `C`.
 
-To use the library in your own code, import and feed it!
+To use the module in your own module, import and feed it!
 
 ```js
-const Emojifier = require( 'emojify-hashes')
+import emojify from 'emojify-hashes'
 
 const hash = 'f3d18279b58b78a7e41fc6ec93f00f4dde045463ec21a527714e65c30553a52d' // sha256 of 'emojify-hashes'
-const emojis = Emojifier.emojify(hash) // Returns [ '🍸', '🥧', '🐏', '🐗' ]
+const emojis = emojify(hash) // Returns [ '🍸', '🥧', '🐏', '🐗' ]
 console.log(emojis.join('')) // Outputs 🍸🥧🐏🐗
 ```

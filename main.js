@@ -1,4 +1,4 @@
-import Emojifier from './Emojifier.js'
+import emojify from './emojify.js'
 import Sha256 from './Sha256.js'
 import readline from 'readline'
 
@@ -14,7 +14,7 @@ rl.prompt()
 
 rl.on('line', (line) => {
   const hash = Sha256.hash(line.trim())
-  const emojis = Emojifier.emojify(hash)
+  const emojis = emojify(hash)
 
   console.log(
     hash,
