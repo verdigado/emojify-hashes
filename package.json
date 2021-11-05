@@ -5,7 +5,7 @@
   "type": "module",
   "main": "emojify.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "cli": "node main.js"
   },
   "author": "HerHde",
@@ -13,5 +13,8 @@
   "repository": {
     "type": "git",
     "url": "https://git.verdigado.com/verdigado/emojify-hashes.git"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3"
   }
 }

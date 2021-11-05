@@ -1,7 +1,6 @@
 # emojify-hashes
 
-Crate a visualisation of a hash using unicode emoji!
-⚠️ It currently supports only hexadecimal hashes.
+Crate a visualisation of a hexadecimal hash using unicode emoji!
 
 ```plain
 Type something in to generate it's sha256 hash and an emoji representation of that.
