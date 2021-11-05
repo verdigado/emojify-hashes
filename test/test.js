@@ -1,5 +1,6 @@
 import assert from 'assert'
 import emojify from '../emojify.js'
+import generateEmojiArray from '../generateEmojiArray.js'
 
 describe('emojify', function () {
   it('works as stated in the README\'s example', function () {
@@ -24,6 +25,22 @@ describe('emojify', function () {
         name: 'RangeError',
         message: `Input "${input}" is not hexadecimal.`
       }
+    )
+  })
+})
+
+describe('generateEmojiArray', function () {
+  const emojiArray = generateEmojiArray()
+  it('imports emojis as expected', function () {
+    assert.strictEqual(emojiArray[0], '⌚')
+    assert.strictEqual(emojiArray[1], '⌨')
+    assert.strictEqual(emojiArray.length, 1024)
+  })
+
+  it('provides valid input for emojify', function () {
+    assert.deepEqual(
+      emojify('0101', emojiArray),
+      [ '⌚', '⌨', '⌚', '⌨' ]
     )
   })
 })
