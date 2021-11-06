@@ -1,5 +1,5 @@
 import emojify from './emojify.js'
-import Sha256 from './Sha256.js'
+import crypto from 'crypto'
 import readline from 'readline'
 
 console.log('Type something in to generate it\'s sha256 hash and an emoji representation of that.')
@@ -13,7 +13,7 @@ const rl = readline.createInterface({
 rl.prompt()
 
 rl.on('line', (line) => {
-  const hash = Sha256.hash(line.trim())
+  const hash = crypto.createHash('sha256').update(line.trim()).digest('hex')
   const emojis = emojify(hash)
 
   console.log(

@@ -58,6 +58,7 @@ describe('CLI', function () {
     assert.ok(npmReturn.includes(outputHash))
     assert.ok(npmReturn.includes(outputEmojis))
   })
+
   it('works with `npm run cli` and `node cli.js` equally', function () {
     assert.equal(
       nodeReturn.split('\n')[resultIndex],
