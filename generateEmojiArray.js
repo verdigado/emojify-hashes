@@ -1,11 +1,12 @@
+/** @module generateEmojiArray */
 import fs from 'fs'
 
 /**
  * Return an array with all numbers from `start` to `end`
  * 
- * @param {Number} start The first number to be in the Array
- * @param {Number} end  The last number to be in the Array
- * @returns An Array with all consecutive numbers as elements, ranging from `start` to `end`
+ * @param {number} start The first number to be in the Array
+ * @param {number} end  The last number to be in the Array
+ * @returns {number[]} An Array with all consecutive numbers as elements, ranging from `start` to `end`
  */
 Array.range = (start, end) => Array.from(
   { length: (end - start) },
@@ -15,8 +16,8 @@ Array.range = (start, end) => Array.from(
 /**
  * Synchronously generate an array of emojis from a given Unicode emoji-data input file.
  * 
- * @param {String} filename The file to read the emoji definition from
- * @returns An array of emojis
+ * @param {string} [filename=emoji-data.txt] filename The file to read the emoji definition from
+ * @returns {Array} An array of emojis
  */
 export default function generateEmojiArray (filename = 'emoji-data.txt') {
   const file = fs.readFileSync(

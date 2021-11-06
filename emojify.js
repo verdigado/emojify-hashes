@@ -1,3 +1,5 @@
+/** @module emojify-hashes */
+
 /**
  * A predefined Array of unicode emojis
  */
@@ -8,9 +10,10 @@ export const emojiArray = [
 /**
  * Crates a visualisation of hashes using unicode emoji
  * 
- * @param {String} hexString The hash to visualise
- * @param {Array[String]} emojis The alphabet to encode the `hexString` in
- * @returns An Array of 4 symbols (One-char Strings)
+ * @param {string} hexString The hash to visualise
+ * @param {Array=} emojis The alphabet to encode the `hexString` in
+ * @returns {Array} An Array of 4 symbols (one-char Strings)
+ * @throws {RangeError} Will throw if the input is not hexadecimal
  */
 export default function emojify (hexString, emojis = emojiArray) {
   const hexRegEx = /^[0-9a-fA-F]+$/
