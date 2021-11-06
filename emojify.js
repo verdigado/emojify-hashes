@@ -22,7 +22,7 @@ export default function emojify (hexString, emojis = emojiArray) {
   const result = []
 
   if (!hexRegEx.test(hexString)) {
-    throw RangeError(`Input "${hexString}" is not hexadecimal.`);
+    throw RangeError(`Input "${hexString}" is not hexadecimal.`)
   }
 
   for (let i = 0; i < numEmojis; i++) {
