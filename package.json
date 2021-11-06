@@ -6,7 +6,7 @@
   "main": "emojify.js",
   "scripts": {
     "test": "mocha",
-    "cli": "node main.js",
+    "cli": "node cli.js",
     "docs": "jsdoc *.js",
     "prepare": "husky install"
   },
