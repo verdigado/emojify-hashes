@@ -35,6 +35,6 @@ console.log(emojis.join('')) // Outputs 🍸🥧🐏🐗
 
 ## About
 
-I consider the status of this package to be `release-candidate`. Contributions are welcome!
+I consider the status of this package to be `stable`. Contributions are welcome!
 
-Made by HerHde for [verdigado](https://verdigado.com/)
+Copyright 2022 verdigado eG <support@verdigado.com>
