@@ -37,4 +37,4 @@ console.log(emojis.join('')) // Outputs 🍸🥧🐏🐗
 
 I consider the status of this package to be `stable`. Contributions are welcome!
 
-Copyright 2022 verdigado eG <support@verdigado.com>
+Copyright 2023 verdigado eG <support@verdigado.com>
