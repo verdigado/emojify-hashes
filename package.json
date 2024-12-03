@@ -19,6 +19,6 @@
   "devDependencies": {
     "husky": "^8.0.3",
     "jsdoc": "^4.0.0",
-    "mocha": "^10.2.0"
+    "mocha": "^11.0.0"
   }
 }
